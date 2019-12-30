@@ -27,10 +27,10 @@ Oxi only has one endpoint: `/parse`. It expects an `application/json`
 Content-Type and accepts the parameters below. If Mercury Parser fails to parse
 the given URL, Oxi will return [status code 422][4].
 
-| Key    | Value Type       | Description                                                                          |
-|--------|------------------|--------------------------------------------------------------------------------------|
-| url    | String           | The url you want to parse.                                                           |
-| format | Optional<String> | The output format of the article's content. Options: html (default), markdown, text. |
+| Key    | Value Type         | Description                                                                          |
+|--------|--------------------|--------------------------------------------------------------------------------------|
+| url    | String             | The url you want to parse.                                                           |
+| format | Optional\<String\> | The output format of the article's content. Options: html (default), markdown, text. |
 
 To start Oxi, add it to your $PATH and run `oxi`. By default it will run on
 port 8080, but you can use the `-p` flag to customise that. Example:
